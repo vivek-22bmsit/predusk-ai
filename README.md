@@ -1,33 +1,92 @@
-# AI Interface Prototype – Frontend Assessment
+# 🚀 Predusk AI - Modern AI Chat Interface
 
-Frontend prototype of an AI interface developed as part of the Frontend & UI/UX Designer Assessment. Built with Next.js, React, TypeScript, Tailwind CSS, Radix UI, and Storybook, it showcases research, design, and development skills. Core features include a model selector, prompt editor, chat UI, parameters panel, search dialog, sidebar navigation, mock API, and a Storybook component library for documented, reusable components.
+A comprehensive AI chat interface built with modern web technologies. This project showcases a full-stack approach with Next.js 15, TypeScript, Tailwind CSS, and a complete component library documented with Storybook.
+
+[![Netlify Status](https://api.netlify.com/api/v1/badges/YOUR-BADGE-ID/deploy-status)](https://app.netlify.com/sites/predusk-ai/deploys)
+
+## 🌟 Features
+
+- **🤖 Interactive Chat Interface** - Real-time messaging with AI-powered responses
+- **🎨 Modern UI Components** - Built with shadcn/ui and Radix primitives
+- **📱 Fully Responsive** - Optimized for desktop, tablet, and mobile devices
+- **🔍 Advanced Search** - Command palette with fuzzy search functionality
+- **⚙️ Customizable Settings** - Theme switching, model selection, and parameters
+- **📚 Component Documentation** - Complete Storybook integration
+- **🔄 Real-time Updates** - Live message editing and deletion
+- **♿ Accessibility First** - WCAG compliant with full keyboard navigation
 
 ---
 
-## Installation & Run
+## 🌐 Live Demo & Resources  
+
+- **🚀 Live Application:** [https://predusk-ai.netlify.app](https://predusk-ai.netlify.app)
+- **📂 GitHub Repository:** [https://github.com/vivek-22bmsit/predusk-ai](https://github.com/vivek-22bmsit/predusk-ai)
+- **🎨 Figma Design:** [View Mockups](https://www.figma.com/proto/W9nnPjbpjMUv7FgExKIBhJ/Untitled?node-id=4-29&t=aGzlTlAvMC2bgaD6-1)
+- **📖 Storybook:** [Component Library](https://predusk-ai.netlify.app/storybook) _(Coming Soon)_
+
+---
+
+## 🛠️ Tech Stack
+
+### Frontend
+- **Framework:** Next.js 15 (App Router)
+- **Language:** TypeScript 5
+- **Styling:** Tailwind CSS 3.4
+- **Components:** shadcn/ui + Radix UI
+- **Animations:** Framer Motion
+- **Icons:** Lucide React
+
+### Development & Tools
+- **Documentation:** Storybook 8
+- **Build Tool:** Turbopack
+- **Linting:** ESLint 9
+- **Deployment:** Netlify
+- **Version Control:** Git + GitHub
+
+---
+
+## ⚡ Quick Start
 
 ### Prerequisites
-- Node.js (v18 or higher recommended)  
-- npm or yarn package manager  
+- **Node.js** 18+ (recommended: 20+)
+- **npm** 9+ or **yarn** 1.22+
+- **Git** for version control
 
-### Steps
+### Installation
+
 ```bash
 # 1. Clone the repository
-git clone <your-repo-url>
-cd <your-project-folder>
+git clone https://github.com/vivek-22bmsit/predusk-ai.git
+cd predusk-ai
 
 # 2. Install dependencies
 npm install
 
-# 3. Run the development server
+# 3. Start development server
 npm run dev
 
-# 4. Open the app in your browser
-http://localhost:3000
+# 4. Open your browser
+# Visit: http://localhost:3000
+```
 
-# 5. Run Storybook (optional)
-npm run storybook
-http://localhost:6006
+### Available Scripts
+
+```bash
+# Development
+npm run dev          # Start dev server with Turbopack
+npm run dev:webpack  # Start dev server with Webpack
+
+# Production
+npm run build        # Build for production
+npm run start        # Start production server
+
+# Quality & Documentation  
+npm run lint         # Run ESLint
+npm run storybook    # Start Storybook server
+npm run build-storybook  # Build Storybook
+
+# Testing (when available)
+npm test             # Run test suite
 ```
 
 ---
@@ -161,13 +220,13 @@ Storybook opens at:
 
 
 # Deployment
-- Deployed on Vercel: Live Demo Link (replace with your deployment URL)  
-- Repository: GitHub Repository (replace with your repo URL)  
+- Deployed on Netlify: Live Demo Link:[https://predusk-ai.netlify.app]
+- Repository: GitHub Repository: [(https://github.com/vivek-22bmsit/predusk-ai]
 
 ---
 
 # Submission Checklist
-- Live URL (Vercel)  
+- Live URL (Netlify)  
 - GitHub Repository (TypeScript + strict mode)  
 - README (Research, Design, Development, Mock API, Storybook)  
 - Mock API Setup (`/src/app/api/` and `/src/data/`)  
