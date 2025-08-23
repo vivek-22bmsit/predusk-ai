@@ -1,19 +1,17 @@
-# 🚀 Predusk AI - Modern AI Chat Interface
+# Predusk AI – Frontend Prototype  
 
-A comprehensive AI chat interface built with modern web technologies. This project showcases a full-stack approach with Next.js 15, TypeScript, Tailwind CSS, and a complete component library documented with Storybook.
+Frontend prototype of an **AI interface** developed as part of the **Frontend & UI/UX Designer Assessment**.  
+Built with **Next.js, React, TypeScript, Tailwind CSS, Radix UI, and Storybook**, it showcases **research, design, and development skills**.  
 
-[![Netlify Status](https://api.netlify.com/api/v1/badges/YOUR-BADGE-ID/deploy-status)](https://app.netlify.com/sites/predusk-ai/deploys)
-
-## 🌟 Features
-
-- **🤖 Interactive Chat Interface** - Real-time messaging with AI-powered responses
-- **🎨 Modern UI Components** - Built with shadcn/ui and Radix primitives
-- **📱 Fully Responsive** - Optimized for desktop, tablet, and mobile devices
-- **🔍 Advanced Search** - Command palette with fuzzy search functionality
-- **⚙️ Customizable Settings** - Theme switching, model selection, and parameters
-- **📚 Component Documentation** - Complete Storybook integration
-- **🔄 Real-time Updates** - Live message editing and deletion
-- **♿ Accessibility First** - WCAG compliant with full keyboard navigation
+Core features include:  
+- Model selector  
+- Prompt editor with templates  
+- Chat UI  
+- Parameters panel  
+- Search dialog  
+- Sidebar navigation  
+- Mock API  
+- Storybook component library  
 
 ---
 
@@ -22,7 +20,7 @@ A comprehensive AI chat interface built with modern web technologies. This proje
 - **🚀 Live Application:** [https://predusk-ai.netlify.app](https://predusk-ai.netlify.app)
 - **📂 GitHub Repository:** [https://github.com/vivek-22bmsit/predusk-ai](https://github.com/vivek-22bmsit/predusk-ai)
 - **🎨 Figma Design:** [View Mockups](https://www.figma.com/proto/W9nnPjbpjMUv7FgExKIBhJ/Untitled?node-id=4-29&t=aGzlTlAvMC2bgaD6-1)
-- **📖 Storybook:** [Component Library](https://predusk-ai.netlify.app/storybook) _(Coming Soon)_
+- **📖 Storybook:** [Component Library](https://predusk-ai.netlify.app/storybook) _(Coming Soon)_ 
 
 ---
 
@@ -45,15 +43,14 @@ A comprehensive AI chat interface built with modern web technologies. This proje
 
 ---
 
-## ⚡ Quick Start
+## 📦 Installation & Run  
 
 ### Prerequisites
 - **Node.js** 18+ (recommended: 20+)
 - **npm** 9+ or **yarn** 1.22+
-- **Git** for version control
+- **Git** for version control 
 
-### Installation
-
+### Steps  
 ```bash
 # 1. Clone the repository
 git clone https://github.com/vivek-22bmsit/predusk-ai.git
@@ -62,36 +59,18 @@ cd predusk-ai
 # 2. Install dependencies
 npm install
 
-# 3. Start development server
+# 3. Run the development server
 npm run dev
+# Open http://localhost:3000
 
-# 4. Open your browser
-# Visit: http://localhost:3000
-```
-
-### Available Scripts
-
-```bash
-# Development
-npm run dev          # Start dev server with Turbopack
-npm run dev:webpack  # Start dev server with Webpack
-
-# Production
-npm run build        # Build for production
-npm run start        # Start production server
-
-# Quality & Documentation  
-npm run lint         # Run ESLint
-npm run storybook    # Start Storybook server
-npm run build-storybook  # Build Storybook
-
-# Testing (when available)
-npm test             # Run test suite
+# 4. Run Storybook (optional)
+npm run storybook
+# Open http://localhost:6006
 ```
 
 ---
 
-## Research
+## 🔍 Research  
 
 ### Platforms Reviewed
 
@@ -132,20 +111,20 @@ From these UIs, I selected 6 core features for my prototype:
   - Spacing: Used Tailwind scale (p-4, gap-6, etc.).  
   - Animations: Framer Motion for hover, focus, and modal transitions.  
 
-Each mockup element was translated directly to Tailwind classes, ensuring pixel-perfect parity between Figma and code.
+Each mockup element was translated directly to Tailwind classes, ensuring pixel-perfect parity between Figma and code.  
 
 ---
 
-## Development
+## 💻 Development  
 
 ### Core Features Implemented
 
-1. Model Selector – Dropdown to switch between GPT-3.5, GPT-4, and dummy models.  
-2. Prompt Editor – Textarea with save and load support (dummy JSON data).  
-3. Parameters Panel – Sliders for temperature, max tokens, and top-p.  
-4. Chat Interface – Styled bubbles for user and AI messages.  
-5. Search Dialog – Command palette modal using @radix-ui/react-dialog.  
-6. Sidebar Navigation – Collapsible sidebar for navigation and model selection.  
+1. **Model Selector** – Dropdown for GPT-3.5, GPT-4, dummy models.  
+2. **Prompt Editor** – Textarea with save/load support (dummy JSON).  
+3. **Parameters Panel** – Sliders for temperature, max tokens, top-p.  
+4. **Chat Interface** – Styled user & AI bubbles.  
+5. **Search Dialog** – Command palette modal (Radix UI).  
+6. **Sidebar Navigation** – Collapsible sidebar with model switching.  
 
 ### Accessibility and UX Polish
 
@@ -165,26 +144,26 @@ Each mockup element was translated directly to Tailwind classes, ensuring pixel-
   - Professional email domains (@techcorp.io).  
   - Async API functions with simulated latency.  
 
-### API Endpoints
-- GET /api/users – Fetch all users with pagination.  
-- POST /api/users – Create a new user with validation.  
-- GET /api/messages – Fetch messages with room filtering.  
-- POST /api/messages – Send a new message with timestamp.  
-- GET /api/dashboard – Analytics and metrics.  
+### Endpoints  
+- `GET /api/users` – Fetch users with pagination  
+- `POST /api/users` – Create user with validation  
+- `GET /api/messages` – Fetch messages (room filter)  
+- `POST /api/messages` – Send new message  
+- `GET /api/dashboard` – Fetch analytics metrics  
 
-### Testing
-Run the development server:
+### Example Test  
+Run the dev server:  
 ```bash
 npm run dev
 ```
-
-Then visit:
-
+Visit:  
 - http://localhost:3000/api/users  
 - http://localhost:3000/api/messages  
 - http://localhost:3000/api/dashboard  
 
 ---
+
+## 📚 Storybook Component Library  
 
 # Storybook Component Library
 
@@ -201,38 +180,38 @@ Then visit:
 - `Chart.stories.tsx` – Data visualization components  
 - `SearchDialog.stories.tsx` – Modal search functionality  
 
-## Features Documented
+### Features  
 - Interactive previews  
-- Multiple states and variants  
-- Responsive design examples  
+- Multiple states/variants  
+- Responsive examples  
 - Accessibility testing  
-- Props controls and documentation  
+- Props documentation  
 
-## Running Storybook
+Run Storybook:  
 ```bash
 npm run storybook
 ```
-
-Storybook opens at:  
-[http://localhost:6006](http://localhost:6006)
+Opens at: http://localhost:6006  
 
 ---
 
+## 🌍 Deployment  
 
-# Deployment
-- Deployed on Netlify: Live Demo Link:[https://predusk-ai.netlify.app]
-- Repository: GitHub Repository: [(https://github.com/vivek-22bmsit/predusk-ai]
-
----
-
-# Submission Checklist
-- Live URL (Netlify)  
-- GitHub Repository (TypeScript + strict mode)  
-- README (Research, Design, Development, Mock API, Storybook)  
-- Mock API Setup (`/src/app/api/` and `/src/data/`)  
-- Storybook (`.storybook/` and `/src/stories/`)  
-- Figma Link (UI Mockups)  
+- **Platform:** Netlify  
+- **Live URL:** [https://predusk-ai.netlify.app] 
+- **Repository:** [https://github.com/vivek-22bmsit/predusk-ai] 
 
 ---
 
-This README demonstrates the end-to-end workflow: research, design, build, document, and deploy.
+## ✅ Submission Checklist  
+
+- [✅] Live Deployment (Netlify)  
+- [✅] GitHub Repository (TypeScript strict mode)  
+- [✅] README (Research, Design, Development, API, Storybook)  
+- [✅] Mock API Setup (`/src/app/api` + `/src/data/`)  
+- [✅] Storybook (`.storybook/` + `/src/stories/`)  
+- [✅] Figma Mockup Link  
+
+---
+
+✨ This README documents the full workflow: **Research → Design → Development → Deployment → Submission**.  
