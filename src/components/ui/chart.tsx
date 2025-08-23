@@ -1,5 +1,7 @@
 "use client";
 
+/* eslint-disable @typescript-eslint/no-explicit-any */
+
 import * as React from "react";
 import * as RechartsPrimitive from "recharts";
 import type { TooltipProps, LegendProps } from "recharts";
@@ -122,7 +124,7 @@ function ChartTooltipContent({
 }: TooltipProps<number, string> & {
   active?: boolean;
   payload?: any[];
-  label?: any;
+  label?: string | number;
   className?: string;
   hideLabel?: boolean;
   hideIndicator?: boolean;

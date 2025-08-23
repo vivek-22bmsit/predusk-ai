@@ -1,7 +1,7 @@
 import { Search, Settings, User, Sun, Moon, PanelLeft, PanelRight, Sparkles } from "lucide-react";
 import { Button } from "./ui/button";
 import { Avatar, AvatarFallback } from "./ui/avatar";
-import { motion, AnimatePresence } from "framer-motion";
+import { motion } from "framer-motion";
 import { useState } from "react";
 import { SearchDialog } from "./SearchDialog";
 
